@@ -1,0 +1,32 @@
+{
+  "name": "d3-tipy",
+  "version": "1.0.0",
+  "description": "D3 tooltip",
+  "author": "TJ Holowaychuk <tj@tjholowaychuk.com>",
+  "main": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "make build"
+  },
+  "keywords": [
+    "tooltip",
+    "d3",
+    "tip"
+  ],
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "devDependencies": {
+    "d3": "^3.5.16",
+    "d3-bar": "^1.1.0",
+    "react-fatigue-dev": "github:tj/react-fatigue-dev#49fec29"
+  },
+  "dependencies": {
+    "offset": "0.0.1"
+  },
+  "files": [
+    "build"
+  ]
+}
