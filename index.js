@@ -1,5 +1,5 @@
 
-import offset from 'offset'
+import offset from 'document-offset'
 
 /**
  * Tip element.
@@ -33,8 +33,8 @@ export default class Tip {
   show = d => {
     const to = offset(el)
     const o = offset(event.target)
-    el.style.top = o.top - to.height + 'px'
-    el.style.left = o.left + 'px'
+    el.style.top = o.top - el.offsetHeight + 'px'
+    el.style.left = o.left + (el.offsetWidth / 2) + 'px'
     el.textContent = this.format(d.value)
     el.classList.add('show')
   }
