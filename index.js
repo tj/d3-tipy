@@ -34,7 +34,7 @@ export default class Tip {
     const to = offset(el)
     const o = offset(event.target)
     el.style.top = o.top - el.offsetHeight + 'px'
-    el.style.left = o.left + (el.offsetWidth / 2) + 'px'
+    el.style.left = o.left - (el.offsetWidth / 2) + 'px'
     el.textContent = this.format(d.value)
     el.classList.add('show')
   }
