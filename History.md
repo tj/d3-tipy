@@ -1,4 +1,10 @@
 
+v1.1.0 / 2016-03-24
+===================
+
+  * add passing of all data, not just .value formatter
+  * fix offset typo
+
 v1.0.2 / 2016-03-23
 ===================
 
