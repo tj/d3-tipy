@@ -16,7 +16,7 @@ document.body.appendChild(el)
 export default class Tip {
 
   // format function
-  format = String;
+  format = d => d.value;
 
   /**
    * Initialize with the given `config`.
@@ -35,7 +35,7 @@ export default class Tip {
     const o = offset(event.target)
     el.style.top = o.top - el.offsetHeight + 'px'
     el.style.left = o.left - (el.offsetWidth / 2) + 'px'
-    el.textContent = this.format(d.value)
+    el.textContent = this.format(d)
     el.classList.add('show')
   }
 
