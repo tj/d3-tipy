@@ -31,10 +31,11 @@ export default class Tip {
    */
 
   show = d => {
-    const to = offset(el)
-    const o = offset(event.target)
+    const t = event.target
+    const tb = t.getBoundingClientRect()
+    const o = offset(t)
     el.style.top = o.top - el.offsetHeight + 'px'
-    el.style.left = o.left - (el.offsetWidth / 2) + 'px'
+    el.style.left = o.left - (el.offsetWidth / 2) + (tb.width / 2) + 'px'
     el.textContent = this.format(d)
     el.classList.add('show')
   }
