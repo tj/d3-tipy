@@ -1,4 +1,10 @@
 
+v1.2.1 / 2016-04-05
+===================
+
+  * add explicit display (fixes box dims)
+  * fix example format function
+
 v1.2.0 / 2016-03-28
 ===================
 
