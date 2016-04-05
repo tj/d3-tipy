@@ -21,7 +21,7 @@ const gen = n => {
 class App extends Component {
   componentDidMount() {
     const tip = new Tip({
-      format: d3.format(',')
+      format: d => d3.format(',')(d.value)
     })
 
     this.a = new BarChart({
