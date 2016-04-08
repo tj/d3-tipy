@@ -1,5 +1,6 @@
 
 import offset from 'document-offset'
+import d3 from 'd3'
 
 /**
  * Tip element.
@@ -32,7 +33,7 @@ export default class Tip {
    */
 
   show = d => {
-    const t = event.target
+    const t = d3.event.target
     const tb = t.getBoundingClientRect()
     const o = offset(t)
     el.style.display = 'block'
