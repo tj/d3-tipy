@@ -36,10 +36,10 @@ export default class Tip {
     const t = d3.event.target
     const tb = t.getBoundingClientRect()
     const o = offset(t)
+    el.textContent = this.format(d)
     el.style.display = 'block'
     el.style.top = o.top - el.offsetHeight + 'px'
     el.style.left = o.left - (el.offsetWidth / 2) + (tb.width / 2) + 'px'
-    el.textContent = this.format(d)
     el.classList.add('show')
   }
 
