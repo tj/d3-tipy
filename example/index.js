@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import BarChart from 'd3-bar'
 import Tip from '../index'
-import d3 from 'd3'
+import * as d3 from 'd3'
 
 const gen = n => {
   const data = []
