@@ -1,6 +1,6 @@
 
 import offset from 'document-offset'
-import d3 from 'd3'
+import * as d3 from 'd3'
 
 /**
  * Tip element.
